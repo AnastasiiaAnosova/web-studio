@@ -1,0 +1,170 @@
+:root{
+    --primary-font-family: "Roboto",
+        sans-serif;
+    --logo-font-family: "Raleway",
+        sans-serif;;
+    --logo-color-text: #4D5AE5;
+    --primary-color-text: #2E2F42;
+    --body-color-text: #434455;
+    --white-color: #FFFFFF;
+    --light-mode-color: #F4F4FD;
+}
+
+body {
+    font-family: var(--primary-font-family);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 2%;
+    color: var(--primary-color-text);
+    background-color: var(--white-color);
+
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.text {
+    color: var(--body-color-text);
+}
+
+.section-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/* LOGO */
+.logo {
+    font-family: var(--logo-font-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 3%;
+    text-transform: uppercase;
+    color: var(--logo-color-text);
+}
+
+.logo-accent {
+    color: var(--primary-color-text);
+}
+/* HEADER */
+
+/* .current-page {
+
+} */
+
+.menu-item-link {
+    font-weight: 500;
+    color: inherit;
+}
+
+/* MAIN */
+
+/* HERO */
+.hero-section {
+    color: var(--white-color);
+    background-color: var(--primary-color-text);
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 2%;
+}
+
+.button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 4%;
+    color: inherit;
+    background-color: var(--logo-color-text);
+}
+
+/* WHAT ARE WE DOING */
+.description-list {
+
+}
+
+.description-item {
+
+}
+
+.description-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 2%;
+}
+
+.description-gallery-list {
+
+}
+
+.description-gallery-item {
+
+}
+
+.description-gallery-img {
+
+}
+
+/* OUR TEAM */
+.team-section {
+    background-color: var(--light-mode-color);
+}
+
+.card-team-list {
+
+}
+
+.card-employee-item {
+    background-color: var(--white-color);
+    text-align: center;
+}
+
+.card-employee-item img {
+
+}
+
+/* .card-employee-photo {
+
+} */
+
+.card-employee-item h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+/* .card-employee-name {
+
+} */
+
+/* .card-employee-item p {
+    
+} */
+/* .card-employee-position {
+
+} */
+
+/* FOOTER */
+.footer {
+    background-color: var(--primary-color-text);
+}
+
+.logo-accent-footer {
+    color: var(--light-mode-color);
+}
+
+.footer-text {
+    color: var(--light-mode-color);
+}
