@@ -8,6 +8,8 @@
     --body-color-text: #434455;
     --white-color: #FFFFFF;
     --light-mode-color: #F4F4FD;
+    --light-mode-accent-color: #E7E9FC;
+    --pressed-active-color:#404BBF;
 }
 
 body {
@@ -84,7 +86,12 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    align-items: center;
+    text-align: center;
     letter-spacing: 4%;
+}
+
+.button-hero{
     color: inherit;
     background-color: var(--logo-color-text);
 }
@@ -167,4 +174,27 @@ body {
 
 .footer-text {
     color: var(--light-mode-color);
+}
+
+/* PORTFOLIO PAGE */
+.main-filter-button {
+    color: var(--logo-color-text);
+    background-color: var(--light-mode-color);
+    border-color: var(--light-mode-accent-color);
+}
+
+.main-filter-button:hover, .main-filter-button:focus, .main-filter-button:active {
+    color: var(--white-color);
+    background-color: var(--pressed-active-color);
+    border-color: var(--pressed-active-color);
+}
+
+.card-filter-link {
+    color: inherit;
+}
+
+.card-filter-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
 }
