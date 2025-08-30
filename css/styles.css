@@ -16,14 +16,21 @@ body {
     font-family: var(--primary-font-family);
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 2%;
+    letter-spacing: 0.02;
     color: var(--primary-color-text);
     background-color: var(--white-color);
 
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .link {
@@ -32,6 +39,7 @@ body {
 
 .text {
     color: var(--body-color-text);
+    margin: 0;
 }
 
 .section-title {
@@ -41,44 +49,16 @@ body {
     text-transform: capitalize;
 }
 
-/* LOGO */
-.logo {
-    font-family: var(--logo-font-family);
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.16;
-    letter-spacing: 3%;
-    text-transform: uppercase;
-    color: var(--logo-color-text);
+.img {
+    display: block;
 }
 
-.logo-accent {
-    color: var(--primary-color-text);
-}
-/* HEADER */
-
-/* .current-page {
-
-} */
-
-.menu-item-link {
-    font-weight: 500;
-    color: inherit;
-}
-
-/* MAIN */
-
-/* HERO */
-.hero-section {
-    color: var(--white-color);
-    background-color: var(--primary-color-text);
-    text-align: center;
-}
-
-.hero-title {
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 2%;
+.container {
+    width: 1168px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .button {
@@ -88,32 +68,131 @@ body {
     line-height: 1.5;
     align-items: center;
     text-align: center;
-    letter-spacing: 4%;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+
+/* LOGO */
+.logo {
+    margin-right: 76px;
+
+    font-family: var(--logo-font-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--logo-color-text);
+}
+
+.logo-accent {
+    color: var(--primary-color-text);
+}
+/* HEADER */
+.header {
+    padding: 24px;
+    border-bottom: 1px solid var(--light-mode-accent-color);
+}
+
+/* .current-page {
+
+} */
+
+.header-menu-contact {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-list {
+    display: flex;
+    column-gap: 40px;
+}
+
+.menu-item-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    font-weight: 500;
+    color: inherit;
+}
+
+.menu-item-link:hover, .menu-item-link:focus, 
+.contact-item-link:hover, .contact-item-link:focus {
+    color:var(--pressed-active-color);
+}
+
+.contact-list {
+    display: flex;
+    margin-left: auto;
+    gap: 40px;
+}
+
+/* MAIN */
+
+/* HERO */
+.hero-section {
+    padding-top: 188px;
+    padding-bottom: 188px;
+
+    color: var(--white-color);
+    background-color: var(--primary-color-text);
+    text-align: center;
+}
+
+.hero-title {
+    max-width: 496px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 48px;
+
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
 }
 
 .button-hero{
+    padding: 16px 32px;
+    border: none;
+    border-radius: 4px;
     color: inherit;
     background-color: var(--logo-color-text);
 }
 
-/* WHAT ARE WE DOING */
-.description-list {
+.button-hero:hover, .button-hero:focus {
+    background-color: var(--pressed-active-color);
+}
 
+/* WHAT ARE WE DOING */
+.description-section {
+    padding: 120px 0;
+}
+
+.description-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
 }
 
 .description-item {
-
+    max-width: 264px;
 }
 
 .description-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
 }
 
 .description-gallery-list {
-
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
 }
 
 .description-gallery-item {
@@ -121,25 +200,37 @@ body {
 }
 
 .description-gallery-img {
-
 }
 
 /* OUR TEAM */
 .team-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
     background-color: var(--light-mode-color);
 }
 
 .card-team-list {
-
+    display: flex;
+    column-gap: 24px;
+    margin-top: 72px;
 }
 
 .card-employee-item {
-    background-color: var(--white-color);
+    width: 264px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    
     text-align: center;
+    background-color: var(--white-color);
 }
 
 .card-employee-item img {
 
+}
+
+.card-employee-info {
+    padding: 32px 16px;
 }
 
 /* .card-employee-photo {
@@ -147,6 +238,8 @@ body {
 } */
 
 .card-employee-item h3 {
+    margin-bottom: 8px;
+
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -165,6 +258,7 @@ body {
 
 /* FOOTER */
 .footer {
+    padding: 100px 0;
     background-color: var(--primary-color-text);
 }
 
@@ -173,27 +267,63 @@ body {
 }
 
 .footer-text {
+    max-width: 264px;
+    margin-top: 16px;
     color: var(--light-mode-color);
 }
 
 /* PORTFOLIO PAGE */
+.main-section {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.main-filter-list {
+    display: flex;
+    width: 586px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+}
+
 .main-filter-button {
+    padding: 12px 24px;
+    border: 1px solid var(--light-mode-accent-color);
+    border-radius: 4px;
     color: var(--logo-color-text);
     background-color: var(--light-mode-color);
     border-color: var(--light-mode-accent-color);
 }
 
-.main-filter-button:hover, .main-filter-button:focus, .main-filter-button:active {
+.main-filter-button:hover, .main-filter-button:focus, 
+.main-filter-button:active {
     color: var(--white-color);
     background-color: var(--pressed-active-color);
     border-color: var(--pressed-active-color);
+}
+
+.card-filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+    margin-top: 72px;
+}
+
+.card-filter-item {
+    width: calc((100% - 24*2) / 3);
 }
 
 .card-filter-link {
     color: inherit;
 }
 
+.card-filter-border {
+    padding: 32px 16px;
+    border: 1px solid var(--light-mode-accent-color);
+    border-top: none;
+}
 .card-filter-title {
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;

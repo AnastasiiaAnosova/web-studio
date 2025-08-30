@@ -10,195 +10,238 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&family=Roboto:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <nav class="menu">
-        <a class="logo link" href="./index.html"
-          >Web<span class="logo-accent">studio</span></a
-        >
-        <ul class="menu-list list">
-          <li class="menu-item-li">
-            <a class="menu-item-link link" href="./index.html">Studio</a>
-          </li>
-          <li class="menu-item-li">
-            <a class="menu-item-link current-page link" href="./portfolio.html"
-              >Portfolio</a
+      <div class="container header-menu-contact">
+        <nav class="menu">
+          <a class="logo link" href="./index.html"
+            >Web<span class="logo-accent">studio</span></a
+          >
+          <ul class="menu-list list">
+            <li class="menu-item-li">
+              <a class="menu-item-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="menu-item-li">
+              <a
+                class="menu-item-link current-page link"
+                href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="menu-item-li">
+              <a class="menu-item-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contact-list list">
+          <li class="contact-item">
+            <a
+              class="contact-item-link text link"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
             >
           </li>
-          <li class="menu-item-li">
-            <a class="menu-item-link link" href="">Contacts</a>
+          <li class="contact-item">
+            <a class="contact-item-link text link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
           </li>
         </ul>
-      </nav>
-      <ul class="contact-list list">
-        <li class="contact-item">
-          <a class="text link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="contact-item">
-          <a class="text link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <section class="main-section">
-        <h1 class="">Our cases</h1>
-        <ul class="main-filter-list list">
-          <!-- button -> radiobutton -->
-          <li>
-            <button class="main-filter-button button" type="button">All</button>
-          </li>
-          <li>
-            <button class="main-filter-button button" type="button">
-              Web Site
-            </button>
-          </li>
-          <li>
-            <button class="main-filter-button button" type="button">App</button>
-          </li>
-          <li>
-            <button class="main-filter-button button" type="button">
-              Design
-            </button>
-          </li>
-          <li>
-            <button class="main-filter-button button" type="button">
-              Marketing
-            </button>
-          </li>
-        </ul>
-        <ul class="card-filter-list list">
-          <li class="card-filter-item">
-            <a class="card-filter-link link" href="">
-              <img
-                class="card-filter-img"
-                src="./images/portfolio/banking.jpg"
-                alt="Banling app interface"
-                width="360"
-                height="300"
-              />
-              <h2 class="card-filter-title">Banking App Interface Concept</h2>
-              <p class="card-filter-text text">App</p>
-            </a>
-          </li>
-          <li class="card-filter-item">
-            <a class="card-filter-link link" href="">
-              <img
-                class="card-filter-img"
-                src="./images/portfolio/cashless.jpg"
-                alt="Cashless payment"
-                width="360"
-                height="300"
-              />
-              <h2 class="card-filter-title">Cashless Payment</h2>
-              <p class="card-filter-text text">Marketing</p>
-            </a>
-          </li>
-          <li class="card-filter-item">
-            <a class="card-filter-link link" href="">
-              <img
-                class="card-filter-img"
-                src="./images/portfolio/meditaion.jpg"
-                alt="Meditaion app"
-                width="360"
-                height="300"
-              />
-              <h2 class="card-filter-title">Meditaion App</h2>
-              <p class="card-filter-text text">App</p>
-            </a>
-          </li>
-          <li class="card-filter-item">
-            <a class="card-filter-link link" href="">
-              <img
-                class="card-filter-img"
-                src="./images/portfolio/taxi.jpg"
-                alt="Taxi service"
-                width="360"
-                height="300"
-              />
-              <h2 class="card-filter-title">Taxi Service</h2>
-              <p class="card-filter-text text">Marketing</p>
-            </a>
-          </li>
-          <li class="card-filter-item">
-            <a class="card-filter-link link" href="">
-              <img
-                class="card-filter-img"
-                src="./images/portfolio/screen.jpg"
-                alt="Screen illustrations"
-                width="360"
-                height="300"
-              />
-              <h2 class="card-filter-title">Screen Illustrations</h2>
-              <p class="card-filter-text text">Design</p>
-            </a>
-          </li>
-          <li class="card-filter-item">
-            <a class="card-filter-link link" href="">
-              <img
-                class="card-filter-img"
-                src="./images/portfolio/online-cours.jpg"
-                alt="Online courses"
-                width="360"
-                height="300"
-              />
-              <h2 class="card-filter-title">Online Courses</h2>
-              <p class="card-filter-text text">Marketing</p>
-            </a>
-          </li>
-          <li class="card-filter-item">
-            <a class="card-filter-link link" href="">
-              <img
-                class="card-filter-img"
-                src="./images/portfolio/ig-stor.jpg"
-                alt="Instagram stories concept"
-                width="360"
-                height="300"
-              />
-              <h2 class="card-filter-title">Instagram Stories Concept</h2>
-              <p class="card-filter-text text">Design</p>
-            </a>
-          </li>
-          <li class="card-filter-item">
-            <a class="card-filter-link link" href="">
-              <img
-                class="card-filter-img"
-                src="./images/portfolio/food.jpg"
-                alt="Organic food"
-                width="360"
-                height="300"
-              />
-              <h2 class="card-filter-title">Organic Food</h2>
-              <p class="card-filter-text text">Web site</p>
-            </a>
-          </li>
-          <li class="card-filter-item">
-            <a class="card-filter-link link" href="">
-              <img
-                class="card-filter-img"
-                src="./images/portfolio/coffe.jpg"
-                alt="Fresh coffee"
-                width="360"
-                height="300"
-              />
-              <h2 class="card-filter-title">Fresh Coffee</h2>
-              <p class="card-filter-text text">Web site</p>
-            </a>
-          </li>
-        </ul>
+        <div class="container">
+          <h1 class="">Our cases</h1>
+          <ul class="main-filter-list list">
+            <!-- button -> radiobutton -->
+            <li>
+              <button class="main-filter-button button" type="button">
+                All
+              </button>
+            </li>
+            <li>
+              <button class="main-filter-button button" type="button">
+                Web Site
+              </button>
+            </li>
+            <li>
+              <button class="main-filter-button button" type="button">
+                App
+              </button>
+            </li>
+            <li>
+              <button class="main-filter-button button" type="button">
+                Design
+              </button>
+            </li>
+            <li>
+              <button class="main-filter-button button" type="button">
+                Marketing
+              </button>
+            </li>
+          </ul>
+          <ul class="card-filter-list list">
+            <li class="card-filter-item">
+              <a class="card-filter-link link" href="">
+                <img
+                  class="card-filter-img img"
+                  src="./images/portfolio/banking.jpg"
+                  alt="Banling app interface"
+                  width="360"
+                  height="300"
+                />
+                <div class="card-filter-border">
+                  <h2 class="card-filter-title">
+                    Banking App Interface Concept
+                  </h2>
+                  <p class="card-filter-text text">App</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-filter-item">
+              <a class="card-filter-link link" href="">
+                <img
+                  class="card-filter-img img"
+                  src="./images/portfolio/cashless.jpg"
+                  alt="Cashless payment"
+                  width="360"
+                  height="300"
+                />
+                <div class="card-filter-border">
+                  <h2 class="card-filter-title">Cashless Payment</h2>
+                  <p class="card-filter-text text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-filter-item">
+              <a class="card-filter-link link" href="">
+                <img
+                  class="card-filter-img img"
+                  src="./images/portfolio/meditaion.jpg"
+                  alt="Meditaion app"
+                  width="360"
+                  height="300"
+                />
+                <div class="card-filter-border">
+                  <h2 class="card-filter-title">Meditaion App</h2>
+                  <p class="card-filter-text text">App</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-filter-item">
+              <a class="card-filter-link link" href="">
+                <img
+                  class="card-filter-img img"
+                  src="./images/portfolio/taxi.jpg"
+                  alt="Taxi service"
+                  width="360"
+                  height="300"
+                />
+                <div class="card-filter-border">
+                  <h2 class="card-filter-title">Taxi Service</h2>
+                  <p class="card-filter-text text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-filter-item">
+              <a class="card-filter-link link" href="">
+                <img
+                  class="card-filter-img img"
+                  src="./images/portfolio/screen.jpg"
+                  alt="Screen illustrations"
+                  width="360"
+                  height="300"
+                />
+                <div class="card-filter-border">
+                  <h2 class="card-filter-title">Screen Illustrations</h2>
+                  <p class="card-filter-text text">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-filter-item">
+              <a class="card-filter-link link" href="">
+                <img
+                  class="card-filter-img img"
+                  src="./images/portfolio/online-cours.jpg"
+                  alt="Online courses"
+                  width="360"
+                  height="300"
+                />
+                <div class="card-filter-border">
+                  <h2 class="card-filter-title">Online Courses</h2>
+                  <p class="card-filter-text text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-filter-item">
+              <a class="card-filter-link link" href="">
+                <img
+                  class="card-filter-img img"
+                  src="./images/portfolio/ig-stor.jpg"
+                  alt="Instagram stories concept"
+                  width="360"
+                  height="300"
+                />
+                <div class="card-filter-border">
+                  <h2 class="card-filter-title">Instagram Stories Concept</h2>
+                  <p class="card-filter-text text">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-filter-item">
+              <a class="card-filter-link link" href="">
+                <img
+                  class="card-filter-img img"
+                  src="./images/portfolio/food.jpg"
+                  alt="Organic food"
+                  width="360"
+                  height="300"
+                />
+                <div class="card-filter-border">
+                  <h2 class="card-filter-title">Organic Food</h2>
+                  <p class="card-filter-text text">Web site</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-filter-item">
+              <a class="card-filter-link link" href="">
+                <img
+                  class="card-filter-img img"
+                  src="./images/portfolio/coffe.jpg"
+                  alt="Fresh coffee"
+                  width="360"
+                  height="300"
+                />
+                <div class="card-filter-border">
+                  <h2 class="card-filter-title">Fresh Coffee</h2>
+                  <p class="card-filter-text text">Web site</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <a class="logo link" href="./index.html"
-        >Web<span class="logo-accent-footer">studio</span></a
-      >
-      <p class="footer-text">
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
+      <div class="container">
+        <a class="logo link" href="./index.html"
+          >Web<span class="logo-accent-footer">studio</span></a
+        >
+        <p class="footer-text text">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
+      </div>
     </footer>
   </body>
 </html>
