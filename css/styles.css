@@ -295,6 +295,12 @@ h1, h2, h3, h4, h5, h6 {
     border-color: var(--light-mode-accent-color);
 }
 
+.main-filter-button.filter-selected-button {
+    color: var(--white-color);
+    background-color: var(--pressed-active-color);
+    border-color: var(--pressed-active-color);
+}
+
 .main-filter-button:hover, .main-filter-button:focus, 
 .main-filter-button:active {
     color: var(--white-color);
@@ -317,11 +323,16 @@ h1, h2, h3, h4, h5, h6 {
     color: inherit;
 }
 
+.card-filter-link:hover, .card-filter-link:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .card-filter-border {
     padding: 32px 16px;
     border: 1px solid var(--light-mode-accent-color);
     border-top: none;
 }
+
 .card-filter-title {
     margin-bottom: 8px;
     font-weight: 500;
